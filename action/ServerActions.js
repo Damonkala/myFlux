@@ -1,11 +1,11 @@
 import AppDispatcher from '../AppDispatcher';
 
-const recievedNewPokemon = (pokemon) => {
-  console.log('In Server Actions');
+const receivedNewPokemon = (pokemon) => {
+  console.log('API Data Received Dispatch Event With Data');
   AppDispatcher.dispatch({
-    type: 'RECIEVED_A_POKEMON'.
+    type: 'RECEIVED_A_POKEMON',
     pokemon
   })
 }
 
-export {recievedNewPokemon};
+export {receivedNewPokemon};

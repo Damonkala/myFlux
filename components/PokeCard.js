@@ -1,17 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-
-class PokeCard extends Component {
-	constructor(props){
-		super(props)
-	}
-	render(){
-		return(
-			<div>
-
-			</div>
-		)
-	}
-}
+const PokeCard = ({ name, xp, id }) => (
+  <div>
+    <h1>{ name }</h1>
+    <h3>{ xp }</h3>
+    <h5>{ id }</h5>
+  </div>
+);
 
 export default PokeCard;

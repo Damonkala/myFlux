@@ -28,6 +28,7 @@ class PokeApp extends Component {
 
   _onChange() {
     this.setState(_getAppState());
+    console.log(this.state);
   }
 
   getNewPokemon(){
@@ -35,11 +36,12 @@ class PokeApp extends Component {
   }
 
   render(){
+    let pokemon = this.state.pokemon;
     console.log('Current State', this.state);
     return(
       <div>
-        <PokeList />
-          <PokeReq getNewPokemon={this.getNewPokemon.bind(this)}/>
+        <PokeList pokemon={pokemon} />
+        <PokeReq getNewPokemon={this.getNewPokemon.bind(this)}/>
       </div>
     )
   }

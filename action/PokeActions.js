@@ -1,7 +1,8 @@
 import {newPokemonRequest} from '../API';
 
 const newPokemonAction = () => {
-	newPokemonRequest()
+  console.log('In Pokemon Actions');
+  newPokemonRequest()
 }
 
 export {newPokemonAction};

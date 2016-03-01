@@ -8,6 +8,7 @@ class PokemonStore extends EventEmitter {
     super(props);
 
     AppDispatcher.register(action => {
+      console.log('Inside Store');
       switch(action.type) {
         case 'RECEIVED_A_POKEMON':
           _pokemon = action.pokemon; 

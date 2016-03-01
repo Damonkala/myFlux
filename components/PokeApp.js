@@ -35,7 +35,7 @@ class PokeApp extends Component {
   }
 
   render(){
-    console.log(this.state);
+    console.log('Current State', this.state);
     return(
       <div>
         <PokeList />

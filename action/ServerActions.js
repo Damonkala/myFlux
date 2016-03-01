@@ -1,10 +1,10 @@
-import AppDispatcher, from '../AppDispatcher';
+import AppDispatcher from '../AppDispatcher';
 
 const recievedNewPokemon = (pokemon) => {
 	console.log(pokemon);
 	AppDispatcher.dispatch({
 		type: 'RECIEVED_A_POKEMON'.
-		poke: 
+		pokemon
 	})
 }
 
